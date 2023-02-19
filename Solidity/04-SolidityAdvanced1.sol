@@ -5,6 +5,7 @@ pragma solidity ^0.8.17;
 
 contract SolidityAdvanced1 {
   /* ------ functions visibilities ------ */
+  // pure functions, view functions
 
   /* ------ Getter & Setter functions ------ */
 

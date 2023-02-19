@@ -52,8 +52,14 @@ contract SolidityBasics1 { // kind of like OOP languages, this is where you woul
   }
 
   /* ------ functions ------ */
-  // format: function (<parameter types>) {internal|external} [pure|view|payable] [returns (<return types>)]
-  // {internal|external}: 
+  // format: function (<parameter types>) {internal|external|public|private} [pure|view|payable] [returns (<return types>)]
+  // {internal|external|public|private}: 
+  // - external functions can be called from other contracts but not internally, 
+  // - public functions can be called by both other contracts and internally 
+  // - internal functions can only be called internally and inherited contract
+  // - private functions can only be called internally.
+  // [pure|view|payable]: will explain in SolidityAdvanced1
+  // [returns (<return types>)]: specify return types, if there's multiple return values, just make sure using prentices to wrap them
   function add(int num) external isAdmin{
     if (num <= 0) {
       revert NotGreaterThanZero(num);
