@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT 
+// by Brian Seong
 pragma solidity ^0.8.17;
 
 contract SolidityBasics2 {
@@ -14,6 +15,9 @@ contract SolidityBasics2 {
 
   /* ------ data location ------ */
   
-  /* ------- library ------ */
+  /* ------ units ------ */
+  // ethers
+  // time
+  //
 
 }

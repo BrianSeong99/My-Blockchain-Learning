@@ -1,9 +1,10 @@
 // You want to include solidity version at the beginning, recently we mostly use anything above 0.8v.
 // SPDX-License-Identifier: MIT 
+// by Brian Seong
 // It is recommended in the official docs of solidity that every file should start with this line below.
 pragma solidity ^0.8.17;
 
-contract SolidityBasics { // kind of like OOP languages, this is where you would declare your contract name, you could try to understand the keyword `contract` as `class` in C++, python, Java etc. 
+contract SolidityBasics1 { // kind of like OOP languages, this is where you would declare your contract name, you could try to understand the keyword `contract` as `class` in C++, python, Java etc. 
 
   /* ------ basic types ------ */
   // If you want to learn in details, def should check out here: 
@@ -52,6 +53,7 @@ contract SolidityBasics { // kind of like OOP languages, this is where you would
 
   /* ------ functions ------ */
   // format: function (<parameter types>) {internal|external} [pure|view|payable] [returns (<return types>)]
+  // {internal|external}: 
   function add(int num) external isAdmin{
     if (num <= 0) {
       revert NotGreaterThanZero(num);
