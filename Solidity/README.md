@@ -1,4 +1,4 @@
-# Solidity X days to master solidity
+# 7 days to master solidity
 by Brian Seong
 
 ## Introduction
